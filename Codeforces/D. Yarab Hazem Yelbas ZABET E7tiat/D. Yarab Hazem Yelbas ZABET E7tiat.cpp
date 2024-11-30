@@ -1,5 +1,7 @@
 /*
 *
+https://codeforces.com/gym/564136/problem/D
+
 *
 #									{	 I have no choice		}
 #									{	 I only have a dream	}
