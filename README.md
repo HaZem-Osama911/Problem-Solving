@@ -1,43 +1,91 @@
-# Problem Solving
+# Problem Solving in C++
 
-My C++ solutions and practice files from **Codeforces** and **Assiut Training**, organized by problem.
+A personal collection of competitive programming solutions and training exercises, covering C++ fundamentals, STL, searching, sorting, and algorithmic techniques.
+
+**66 problem folders · 67 C++ files · 2 collections · 12 topics**
+
+[Codeforces index](codeforces/README.md) · [Assiut Training index](assiut-training/README.md) · [Browse by topic](docs/TOPICS.md)
 
 ## Browse the collection
 
-| Collection | Contents |
-| --- | --- |
-| [Codeforces](Codeforces) | Contest and practice problems, grouped into named folders. |
-| [Assiut Training](Assiut%20Training) | Exercises covering STL containers, searching, sorting, and range queries. |
+| Collection | Problem folders | C++ files | Focus |
+| --- | ---: | ---: | --- |
+| [Codeforces](codeforces/README.md) | 49 | 50 | Contest problems and general practice |
+| [Assiut Training](assiut-training/README.md) | 17 | 17 | STL, searching, sorting, and range queries |
 
-## Explore by topic
+## A quick tour
 
-| Topic | Example folder |
-| --- | --- |
-| Binary search | [Binary search STL](Assiut%20Training/B.%20binary%20search%20STL) |
-| Sets | [Set practice](Assiut%20Training/A.%20set) |
-| Stacks | [Stack practice](Assiut%20Training/D.%20Stack) |
-| Queues and deques | [Queue](Assiut%20Training/E.%20Queue) · [Deque](Assiut%20Training/F.%20Deque) |
-| Priority queues | [Maximum priority queue](Assiut%20Training/G.%20priority%20queue%20maximum) |
-| Prefix sums and range queries | [Range sum query](Assiut%20Training/E.%20Range%20sum%20query) |
-| Vectors and sorting | [Using vector](Assiut%20Training/I.%20Using%20vector) · [Sorting pairs](Assiut%20Training/K.%20Sorting%20pairs) |
+| Technique | Example | What to look for |
+| --- | --- | --- |
+| Binary search | [Interesting Drink](codeforces/b-interesting-drink/solution.cpp) | Sorting and `upper_bound` for repeated queries |
+| Sliding window | [Books](codeforces/b-books/solution.cpp) | Maintaining a running sum with two pointers |
+| Prefix sums | [Range Sum Query](assiut-training/e-range-sum-query/solution.cpp) | Preprocessing for range totals |
+| Strings & frequency maps | [Letter](codeforces/d-letter/solution.cpp) | Counting available characters |
+| STL containers | [Set](assiut-training/a-set/solution.cpp) | Ordered lookup, insertion, and bounds |
 
-## Reading the solutions
+For the full list, use the collection indexes or the [topic index](docs/TOPICS.md).
 
-- Each problem folder contains one or more `.cpp` files.
-- Files are standalone programs and should be compiled individually.
-- Input and output follow the corresponding exercise.
-- This is a practice collection; inclusion here does not imply every solution has been independently verified.
+## Repository layout
 
-## Compile a solution
-
-With a C++ compiler such as GCC installed, a typical command is:
-
-```sh
-g++ -std=c++17 "path/to/solution.cpp" -o solution
+```text
+codeforces/
+  b-books/
+    solution.cpp
+  ...
+  README.md
+assiut-training/
+  e-range-sum-query/
+    solution.cpp
+  ...
+  README.md
+docs/
+  TOPICS.md
+  PATH-MAP.md
+README.md
 ```
 
-Run the resulting executable and provide the input for that problem. Compiler requirements may vary between files.
+Folder names use lowercase words separated by hyphens. The leading letter comes from the original exercise label; it is not a difficulty rating. Each file is a standalone program. An additional implementation, when present, is named `solution-2.cpp`.
 
-## More work
+## Run a solution
 
-[ASP.NET Core projects](https://github.com/HaZem-Osama911/Projects) · [GitHub profile](https://github.com/HaZem-Osama911)
+Install a C++ compiler such as GCC, then clone the repository:
+
+```sh
+git clone https://github.com/HaZem-Osama911/Problem-Solving.git
+cd Problem-Solving
+```
+
+Compile one file at a time. For example:
+
+**Windows / PowerShell**
+
+```powershell
+g++ -std=c++17 -O2 codeforces/b-books/solution.cpp -o solution.exe
+.\solution.exe
+```
+
+**Linux / macOS**
+
+```sh
+g++ -std=c++17 -O2 codeforces/b-books/solution.cpp -o solution
+./solution
+```
+
+Enter the input required by the chosen problem. Avoid compiling the whole collection into one executable: the files have separate `main` functions.
+
+## About this collection
+
+These are learning and practice submissions. The indexes document the available code; they do not claim every file is judge-accepted or independently tested. Compiler compatibility can vary between older submissions.
+
+Original solution contents and Git history are preserved. Two byte-identical duplicate files were consolidated, while distinct variants were retained. If you used an older folder link, the [old-to-new path map](docs/PATH-MAP.md) points to its current location.
+
+## Adding a solution
+
+1. Use the matching collection and a folder such as `codeforces/a-problem-name/`.
+2. Save the implementation as `solution.cpp`; keep distinct alternatives as `solution-2.cpp`.
+3. Add the problem to the collection index and topic index, and update the counts above.
+4. Keep generated executables and editor files out of commits.
+
+---
+
+[GitHub profile](https://github.com/HaZem-Osama911) · [.NET projects](https://github.com/HaZem-Osama911/Projects)

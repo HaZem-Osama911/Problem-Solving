@@ -1,0 +1,16 @@
+# Local build outputs
+/solution
+/solution.exe
+/build/
+*.exe
+*.out
+*.o
+*.obj
+*.pdb
+*.ilk
+
+# Editor and operating-system files
+.vs/
+.idea/
+.DS_Store
+Thumbs.db
